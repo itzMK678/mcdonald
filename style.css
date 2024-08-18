@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.help-area{
+    height: 100%;
+    width: 100%;
+   
+
+}
+.upernav{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav{
+    height: 50%;
+    width: 100%;
+ 
+}
+
+.upernav-rigth ul{
+    display: flex;
+
+    
+}
+
+.upernav-rigth ul li{
+    list-style-type: none;
+    font-size: 25px;
+    margin: 15px;
+    
+} 
+.upernav-rigth ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "outfit";
+    font-weight: 300;
+}
+.upernav-left ul{
+    display: flex;
+}
+.upernav-left ul li{
+    list-style-type: none;
+    font-size: 25px;
+    margin: 15px;
+}
+.upernav-left ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "outfit";
+    font-weight: 300;
+}
+.order{
+    background-color: #FFBC0D;
+
+    padding:15px;
+    border-radius: 10px;
+}
+
+.fa-location-dot{
+    font-size: 25px;
+    color: rgb(113, 0, 0);
+    padding: 3px;
+}
+
+.fa-magnifying-glass{
+    font-size: 22px;   
+    padding: 3px;
+}
+
+.bottom-nav ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+   
+}
+.bottom-nav ul li{
+    margin-right: 80px;
+    list-style-type: none;
+   margin-left: 14px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   overflow-x: hidden;
+
+}
+.bottom-nav ul li a{
+    color: black;
+    font-family: 'Outfit';
+    font-size: 25px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 300;
+    /* overflow: hidden; */
+}
+.bottom-nav ul li a:hover::after{
+    content: '';
+    width: 250px;
+    left: 0;
+    bottom:-70%;
+    border: 3px solid rgb(168, 21, 21);
+    position: absolute;
+}
+
+.hero-area{
+    height: 800px;
+    width: 800px;
+    background-color: rgb(255, 255, 255);   
+}
+
+.commercial{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.order-offer{width: 400px;
+height: 335px;
+position: absolute;
+bottom: 10%;
+left: 10%;
+background-color:white;}
+
+.orders{
+   
+    width: 100%;
+   padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.mcCafe{
+    border: 0.1px solid lightgray;
+    border-radius: 6px;
+    height: 500px;
+    overflow: hidden;
+    width: 450px;
+    margin: 20px;
+    background-color: white;
+
+}
+
+.order-pic{width: 100%;
+background-color: aqua;
+height: 200px;
+background-size: cover ;
+}
+
+.order-name{
+    color: red;
+    background-color:white;
+    display: flex;  
+    justify-content: center;
+    height: 70px;
+    padding-top: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.order-info{
+    display: flex;
+    
+    width: 100%;
+   
+}
+.order-info p{width: 100%;
+  text-align: center;
+margin: 10px;
+   font-size: 19px;
+   font-family: 'outfit';
+  
+color: rgb(0, 0, 0);}
+
+.buton{height: 100px;
+width: 100px;}
+
+#button{
+    margin-top: 45px;
+    margin-left: 145px;
+    font-weight: 300;
+    font-size: larger;
+}
+
+.commercial-pic{
+    padding: 2%;
+    width: 90%;
+}
+
+.order-offer h1 {
+    font-family: 'Outfit';
+    font-size: 40px;
+    padding: 11px;
+
+}
+
+.order-offer h5 {
+    font-family: 'Outfit';
+    font-size: 20px;
+    padding: 11px;
+    font-weight: 300;
+    
+}
+#CIRCLE{
+    display: flex;
+    margin-left: 10px;
+}
+
+.fa-circle{
+   margin: 3px;
+   font-size: 13px;
+   color: grey;
+
+}
+.fa-circle:nth-child(1){
+    color: red;
+}
+
+
+
+
+
+.bars{
+    background-color:white;
+    width: 90%;
+    height: 150px;
+    display: flex;
+   
+    padding: 40px;
+
+    color: rgb(21, 21, 21);
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 150px;
+    
+
+}
+
+ul a {display: block;
+    font-size: 25px;
+    font-family: 'outfit';
+   
+}
+
+.head{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.logos-icon{ padding-left: 20px;
+padding-bottom: 20px;
+}
+
+
+
+.logos-icon i{
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 10px;
+    &:hover{
+        background-color: #fe2b54;
+        color: white;
+    }
+}
+ 
+
+
+.last-logo{
+    display:flex;
+}
+
+.logos-photos{
+    padding-left: 800px;}
+
+.gogpic{
+     width: 200px;
+}
+
+.hrline{
+    width: 90%;
+    height:40px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.term ul {
+    display: flex;
+    list-style-type: none;
+   
+}
+.term ul li {
+    margin: 14px;
+    font-size:larger ;
+}
+
+.term-poloicy{
+    display: flex;
+}
+
+#end-logo{
+    height: 35px;
+    width: 35px;
+    
+}
+
+.company-right{
+    display: flex;
+    align-items: center;
+    margin-left: 800px;
+}
+.fa-arrows-up-down{
+    background-color: red;
+    padding: 20px 30px;
+    color: white;
+    position: fixed;
+    z-index: 10;
+    bottom: 10%;
+    right: 2%;
+    border-radius: 50%;
+    font-size: 40px;
+}
