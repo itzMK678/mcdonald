@@ -2,19 +2,51 @@
     margin: 0;
     padding: 0;
 }
+.alert-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.alert{
+    position: fixed;
+    z-index: 20;
+    width: 800px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: white;
+    top: 0%;
+
+}
+.alert i{
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 20px;
+    font-size: 30px;
+    z-index: 22;
+}
+.alert img{
+ /* object-position: contain;
+  */
+  width: 100%;
+}
 .navbar {
-  height: 150px;
+  height: 120px;
   width: 100%;
   display: flex;
   box-shadow: 0px 0px 10px gray;
 }
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.both-nav{
+    display: flex;
+    flex-direction: column;
 }
 .help-area{
     height: 100%;
@@ -44,46 +76,56 @@
 
 .upernav-rigth ul li{
     list-style-type: none;
-    font-size: 25px;
-    margin: 15px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
     
 } 
 .upernav-rigth ul li a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
+
     font-family: "outfit";
-    font-weight: 300;
+    font-weight: 400;
 }
 .upernav-left ul{
     display: flex;
 }
 .upernav-left ul li{
     list-style-type: none;
-    font-size: 25px;
     margin: 15px;
+    display: flex;
+    align-items: center;
 }
 .upernav-left ul li a {
     text-decoration: none;
     color: black;
     font-family: "outfit";
-    font-weight: 300;
+    font-size: 18px;
+
+    font-weight: 400;
 }
 .order{
     background-color: #FFBC0D;
 
-    padding:15px;
+    padding:8px;
+    margin: 0px 10px;
+    width: fit-content;
+    display: flex;
+    /* flex-shrink: 1; */
     border-radius: 10px;
 }
 
 .fa-location-dot{
     font-size: 25px;
-    color: rgb(113, 0, 0);
+    color: rgb(228, 48, 48);
     padding: 3px;
 }
 
 .fa-magnifying-glass{
-    font-size: 22px;   
-    padding: 3px;
+    font-size: 20px;   
+    padding: 5px;
 }
 
 .bottom-nav ul{
@@ -93,11 +135,12 @@
    
 }
 .bottom-nav ul li{
-    margin-right: 80px;
+    margin-right: 60px;
     list-style-type: none;
    margin-left: 14px;
    height: 100%;
    display: flex;
+
    align-items: center;
    overflow-x: hidden;
 
@@ -105,10 +148,11 @@
 .bottom-nav ul li a{
     color: black;
     font-family: 'Outfit';
-    font-size: 25px;
+   font-size: 18px;
+
     position: relative;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
     /* overflow: hidden; */
 }
 .bottom-nav ul li a:hover::after{
@@ -153,9 +197,9 @@ background-color:white;}
 .mcCafe{
     border: 0.1px solid lightgray;
     border-radius: 6px;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
-    width: 450px;
+    width: 320px;
     margin: 20px;
     background-color: white;
 
@@ -172,9 +216,9 @@ background-size: cover ;
     background-color:white;
     display: flex;  
     justify-content: center;
-    height: 70px;
-    padding-top: 25px;
-    font-size: 30px;
+    height: 50px;
+    padding-top: 15px;
+    font-size: 25px;
     font-weight: bolder;
 }
 .order-info{
@@ -183,27 +227,33 @@ background-size: cover ;
     width: 100%;
    
 }
-.order-info p{width: 100%;
-  text-align: center;
-margin: 10px;
-   font-size: 19px;
+.order-info p{
+    width: 100%;
+    text-align: center;
+     margin: 3px;
+   font-size: 15px;
    font-family: 'outfit';
-  
-color: rgb(0, 0, 0);}
+   color: rgb(0, 0, 0);}
 
-.buton{height: 100px;
-width: 100px;}
+.buton{
+    height: 50px;
+    width: 50px;}
 
 #button{
-    margin-top: 45px;
-    margin-left: 145px;
-    font-weight: 300;
-    font-size: larger;
+    margin-top: 15px;
+    margin-left: 100px;
+    font-weight: 200;
+    height: fit-content;
+    width: fit-content;
+    font-size: 15px;
+    padding: 0px;
 }
 
 .commercial-pic{
     padding: 2%;
     width: 90%;
+    height: fit-content;
+    object-fit: cover;
 }
 
 .order-offer h1 {
@@ -219,10 +269,6 @@ width: 100px;}
     padding: 11px;
     font-weight: 300;
     
-}
-#CIRCLE{
-    display: flex;
-    margin-left: 10px;
 }
 
 .fa-circle{
@@ -242,10 +288,11 @@ width: 100px;}
 .bars{
     background-color:white;
     width: 90%;
-    height: 150px;
+    height: fit-content;
     display: flex;
    
-    padding: 40px;
+    padding: 10px;
+    flex-wrap: wrap;
 
     color: rgb(21, 21, 21);
     justify-content: center;
@@ -288,10 +335,10 @@ padding-bottom: 20px;
 
 .last-logo{
     display:flex;
+    justify-content: space-between;
 }
 
-.logos-photos{
-    padding-left: 800px;}
+
 
 .gogpic{
      width: 200px;
@@ -304,8 +351,10 @@ padding-bottom: 20px;
     padding-top: 50px;
 }
 
+
 .term ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
    
 }
@@ -316,6 +365,7 @@ padding-bottom: 20px;
 
 .term-poloicy{
     display: flex;
+    justify-content: space-between;
 }
 
 #end-logo{
@@ -327,7 +377,7 @@ padding-bottom: 20px;
 .company-right{
     display: flex;
     align-items: center;
-    margin-left: 800px;
+    /* margin-left: 800px; */
 }
 .fa-arrows-up-down{
     background-color: red;
@@ -339,4 +389,86 @@ padding-bottom: 20px;
     right: 2%;
     border-radius: 50%;
     font-size: 40px;
+}
+.menu-bar{
+    display: none;
+}
+.fa-bars{
+    font-size: x-large;
+    /* background-color: #fe2b54; */
+    padding: 10px;
+    /* display: none; */
+}
+
+
+
+@media only screen and (max-width:1000px) {
+    .bottom-nav ul li a{
+        font-size: 12px;
+    }
+    .upernav-rigth ul li a , .upernav-left ul li a{
+        font-size: 12px;
+    }
+    .fa-location-dot ,.fa-magnifying-glass{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:900px) {
+    .bottom-nav ul li{
+        margin: 10px 0px;
+    }
+    .upernav ul li{
+        margin: 10px 0px;
+    }
+    .commercial{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+   .order-offer{
+    position: static;
+    width: 100%;
+    
+   }
+   .scrolling-arrow{
+    display: none;
+   }
+   .hrline{
+    padding: 0%;
+    width: 100%;
+   }
+.both-nav{
+    position: fixed;
+    display: none;
+    /* flex-direction: column; */
+
+
+z-index: 10;
+    background-color: white;
+    padding: 15px;
+    margin: 0%;
+    right: 0%;
+    box-shadow: 0px 0px 10px gray;
+
+    top: 100px;
+    width: fit-content;
+
+    height: fit-content;
+}
+.upernav,.upernav-left ul,.upernav-rigth ul,.bottom-nav ul{
+ align-items: start;
+ justify-content: start;
+    display: flex;
+    flex-direction: column;
+}
+    .help-area{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 30px;
+    }
+    .menu-bar{
+        display: block;
+        font-size: 30px;
+    }
 }

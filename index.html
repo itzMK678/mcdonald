@@ -13,11 +13,18 @@
 </head>
 <body>
     <!-- navbar-->
+    <div class="alert-container" id="alert-container">
+        <div class="alert">
+            <i onclick="removealert()" class="fa-solid fa-xmark"></i>
+            <img src="./images/mcd-popup-img-1536x1536-1.png" alt="">
+         </div>
+    </div>
     <div class="navbar">
         <div class="logo"> 
             <img src="./images/McDonalds_Logo.png" alt="">
         </div>
         <div class="help-area"> 
+            <div class="both-nav" id="both-nav">
             <div class="upernav"> 
                 <div class="upernav-rigth">
                     <ul>
@@ -33,15 +40,20 @@
                     </ul>
                 </div>
             </div> 
-            <div class="bottom-nav">
+            <div class="bottom-nav" >
              <ul>
                 <li> <a href="">Our Menu</a>  </li>
                 <li> <a href="">About Our Food</a> </li>
-                <li> <a href="">YOur Right To Know</a> </li>
+                <li> <a href="">Your Right To Know</a> </li>
                 <li> <a href="">Our App</a> </li>
                 <li> <a href="">Family</a> </li>
                 <li> <a href="">Trending Now</a> </li>
              </ul>
+            </div>
+        </div>
+            <div class="menu-bar">
+                <i onclick="showmenu()" class="fa-solid fa-bars"></i>
+
             </div>
         </div>
      </div>
@@ -68,7 +80,7 @@
                  <div class="order-name"> McCafe</div>
                  <div class="order-info">
                     <p>   Browse our menu for more information on  topics such as our tasty coffee and espresso drinks.</p></div>
-          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 150px; height: 60px;border-radius: 7px; border-color: transparent;">Order Now</button></div>
+          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 130px; height: 45px;border-radius: 7px; border-color: transparent;">Order Now</button></div>
         </div>
         <!-- first box done -->
 
@@ -79,7 +91,7 @@
                  <div class="order-name"> McDelivery</div>
                  <div class="order-info">
                     <p>  Deliver food at your door step</p></div>
-          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 150px; height: 60px;border-radius: 7px; border-color: transparent;">Order now</button></div>
+          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 150px; height: 45px;border-radius: 7px; border-color: transparent;">Order now</button></div>
         </div> 
         
        <!-- Second box done -->
@@ -91,7 +103,7 @@
                  <div class="order-name"> Our App</div>
                  <div class="order-info">
                     <p>   McDonald's in your pocket </p></div>
-          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 150px; height: 60px;border-radius: 7px; border-color: transparent;">Download now</button></div>
+          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 135px; height: 45px;border-radius: 7px; border-color: transparent;">Download now</button></div>
      </div>
     <!-- third box done -->
     
@@ -108,7 +120,7 @@
                  <div class="order-name"> Our Menu</div>
                  <div class="order-info">
                     <p>  Our exclusive menu is waiting for you.</p></div>
-          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 150px; height: 60px;border-radius: 7px; border-color: transparent;">Order now</button></div>
+          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 130px; height: 50px;border-radius: 7px; border-color: transparent;">Order now</button></div>
         </div> 
         
        
@@ -121,7 +133,7 @@
                  <div class="order-name"> Trending Now</div>
                  <div class="order-info">
                     <p>  Find out what's new. </p></div>
-          <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 150px; height: 60px;border-radius: 7px; border-color: transparent;">Learn</button></div>
+          <div class="buton"><button id="button" style="background-color: #FFBC0D; width: 130px; height: 50px;border-radius: 7px; border-color: transparent;">Learn</button></div>
      </div>
 
       <!-- Second box done -->
@@ -133,7 +145,7 @@
              <div class="order-name">Careers</div>
              <div class="order-info">
                 <p> Be a part of our team.</p></div>
-      <div class="buton"><button id="button" style="background-color:  #FFBC0D; width: 150px; height: 60px;border-radius: 7px; border-color: transparent;">Order Now</button></div>
+      <div class="buton"><button id="button" style="background-color: #FFBC0D; width: 130px; height: 50px;border-radius: 7px; border-color: transparent;">Order Now</button></div>
     </div>
     <!-- third box done -->
      </div>
@@ -165,7 +177,7 @@
             <a>Local </a>
            </ul>
 
-        </div>
+        </div><br>
         <div class="last-logo">
             <div class="logos-icon">
                 <i class="fa-brands fa-facebook"></i>
@@ -198,4 +210,5 @@
             <i class="fa-solid fa-arrows-up-down"></i>
          </div>
 </body>
+<script src="./script.js"></script>
 </html>
